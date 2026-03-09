@@ -63,4 +63,24 @@ print(other_numbers)
 #To remove all the elements of the list
 
 del other_numbers
-print(other_numbers)
+#print(other_numbers)
+
+#To copy a list to a new list
+
+a = [1,2,3,4,5]
+b = a
+print(b)
+
+#The problem is that whenever you modify a, b will also be modified because they use the same memory space
+
+del a[0]
+print(a)
+print(b)
+print(id(a))
+print(id(b))
+c = a[:] #copy all the elements
+print(id(c))
+
+a.append(6)
+print(a)
+print(c)
