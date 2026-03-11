@@ -24,7 +24,7 @@ operation_1 = 2+3*4
 print(operation_1)
 
 operation_2 = (2+3)*4
-print(operation_2)
+print("operation 2: ", operation_2)
 
 operation_3 = (2+3) * (4**2)/8-1
 print(operation_3)
